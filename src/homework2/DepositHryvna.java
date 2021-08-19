@@ -24,13 +24,13 @@ public class DepositHryvna {
         for (int i = 1; i <= numberOfYears; i++) {
             BigDecimal earningsPerYear = investment.multiply(annualPercentage); // Annual accruals on the deposit
             earningsPerYear = earningsPerYear.setScale(2, RoundingMode.HALF_UP); // Annual accruals rounding to coins
-            BigDecimal sumPerYear = investment.add(earningsPerYear); // Full deposit amount with annual accruals
-            sumPerYear = sumPerYear.setScale(2, RoundingMode.HALF_UP);
+            BigDecimal sumPerYear = investment.add(earningsPerYear); // Full deposit amount per year  with annual accruals
+            sumPerYear = sumPerYear.setScale(2, RoundingMode.HALF_UP); // Total annual sum per year rounding to coins
             investment = sumPerYear;
             System.out.println("Год " + i + ", начисленные проценты за год = " + earningsPerYear + " грн, накопленная сумма = " + sumPerYear + " грн.");
             if (i == numberOfYears) {
                 System.out.println();
-                System.out.println("За " + numberOfYears + " лет, ваш депозит увеличился на " + sumPerYear.subtract(invest) + " грн");
+                System.out.println("За " + numberOfYears + " лет, ваш депозит увеличится на " + sumPerYear.subtract(invest) + " грн");
             }
         }
 
