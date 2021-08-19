@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AverageOfSetOfNumber {
     public static void main(String[] args) {
+        /*Запускаем сканнер*/
         Scanner input = new Scanner(System.in);
         System.out.println("Введите общее колличество чисел, среди которых будем искать среднее арифметическое ");
         int size = input.nextInt(); // Читаем с клавиатуры размер массива и записываем в size

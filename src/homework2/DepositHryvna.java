@@ -19,7 +19,7 @@ public class DepositHryvna {
         System.out.println("Введите срок вклада, колличество лет: ");
         int numberOfYears = scanner.nextInt(); // Read number of years of deposit
 
-        // Formula for calculating the benefits of a deposit
+        // Formula for calculating the benefits of a deposit with capitalization
         System.out.println("Сумма вклада: " + investment + ", процент годовых: " + annualPercentage + ", срок вклада: " + numberOfYears + " лет");
         for (int i = 1; i <= numberOfYears; i++) {
             BigDecimal earningsPerYear = investment.multiply(annualPercentage); // Annual accruals on the deposit
@@ -33,6 +33,9 @@ public class DepositHryvna {
                 System.out.println("За " + numberOfYears + " лет, ваш депозит увеличится на " + sumPerYear.subtract(invest) + " грн");
             }
         }
+        /* Проверял через депозитный калькулятор https://finance.ua/ru/calc/deposit, выходит примерно так же. Там используется другая формула, которая учитывает колличество дней в месяце
+         * и на этом основании начисляет месячный процент, который потом складывается в годовой. Поэтому в зависимости от суммы вклада и его протяженности будет изменяться разница в результатах.
+         */
 
 
     }
