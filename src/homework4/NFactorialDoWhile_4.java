@@ -1,7 +1,9 @@
 package homework4;
 
 import java.util.Scanner;
-
+/**
+ * Дано число n при помощи цикла do while посчитать факториал n!
+ */
 public class NFactorialDoWhile_4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
