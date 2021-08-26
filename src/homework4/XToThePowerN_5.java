@@ -5,6 +5,9 @@ import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.Scanner;
 
+/**
+ * Даны переменные x и n вычислить x^n.
+ */
 
 public class XToThePowerN_5 {
     public static void main(String[] args) {
