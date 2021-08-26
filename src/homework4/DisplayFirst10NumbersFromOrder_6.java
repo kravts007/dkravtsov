@@ -15,7 +15,7 @@ public class DisplayFirst10NumbersFromOrder_6 {
             } else {
                 System.out.print(i);
             }
-        } while (count <= 20);
+        } while (count <= 10);
 
     }
 }
