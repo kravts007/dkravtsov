@@ -1,7 +1,9 @@
 package homework4;
 
 import java.util.Scanner;
-
+/**
+ * Дано число n при помощи цикла for посчитать факториал n!
+ */
 public class NFactorialFor_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
