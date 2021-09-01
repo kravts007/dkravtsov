@@ -18,10 +18,13 @@ public class GuideDog extends Dog {
     }
 
     @Override
-    public String voice() {
+    public void voice() {
         if (isTrained) {
-            return super.voice() + " I can take you home!";
+            super.voice();
+            System.out.print(" I can take you home!");
+        } else{
+            super.voice();
         }
-        return super.voice();
+
     }
 }

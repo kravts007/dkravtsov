@@ -5,7 +5,13 @@ public class Wolf extends Wild{
         super(id, age, weight, color, isPredator);
     }
     @Override
-    public String voice(){
-        return super.voice();
+    public void voice(){
+        if(isPredator()){
+            super.voice();
+            System.out.print(" Howwwwwllll!!!!!");
+        }else if(!isPredator()){
+
+            System.out.println("I am not hungry yet! Howwwwwllll!!!!!");
+        }
     }
 }

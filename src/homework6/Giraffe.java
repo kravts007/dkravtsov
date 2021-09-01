@@ -7,8 +7,13 @@ public class Giraffe extends Wild {
 
 
     @Override
-    public String voice() {
-        return super.voice() + " I live in savannah";
+    public void voice() {
+        if (!isPredator()) {
+            super.voice();
+            System.out.print(" I live in the savannah!");
+        } else {
+            System.out.print("I am not hungry yet!");
+        }
     }
 }
 

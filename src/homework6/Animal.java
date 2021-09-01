@@ -48,7 +48,7 @@ public class Animal {
         this.color = color;
     }
 
-    public String voice() {
-        return "Hello, ";
+    public void voice() {
+        System.out.print("Hello, ");
     }
 }

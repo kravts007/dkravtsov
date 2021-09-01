@@ -5,7 +5,14 @@ public class Crocodile extends Wild{
         super(id, age, weight, color, isPredator);
     }
     @Override
-    public String voice() {
-        return super.voice() + " I live in the river";
+    public void voice() {
+        if(isPredator()){
+            super.voice();
+            System.out.print(" I live in the river!");
+        }else if(!isPredator()){
+            super.voice();
+            System.out.print("I am not hungry yet!");
+        }
+
     }
 }

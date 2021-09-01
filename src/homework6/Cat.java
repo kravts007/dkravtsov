@@ -6,7 +6,8 @@ public class Cat extends Domestic {
     }
 
     @Override
-    public String voice() {
-        return super.voice() + " Meow";
+    public void voice() {
+       super.voice();
+        System.out.print(" Meow!");
     }
 }

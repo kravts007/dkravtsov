@@ -18,10 +18,12 @@ public class Wild extends Animal {
     }
 
     @Override
-    public String voice() {
+    public void voice() {
         if (isPredator()) {
-            return "I am a wild animal and I am angry!";
+            System.out.print("I am a wild animal and I am angry! ");
+        } else{
+            System.out.print("I am a wild animal and I am friendly! ");
         }
-        return "I am a wild animal and I am friendly";
+
     }
 }

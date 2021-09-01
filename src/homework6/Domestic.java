@@ -27,10 +27,12 @@ public class Domestic extends Animal {
     }
 
     @Override
-    public String voice() {
+    public void voice() {
         if (isVaccinated()) {
-            return super.voice() + "my name is" + getName() + " and I am vaccinated";
+             super.voice();
+            System.out.print("my name is" + getName() + "! and I am vaccinated");
         }
-        return super.voice() + "my name is " + getName();
+        super.voice();
+        System.out.print("my name is " + getName() +"!");
     }
 }
