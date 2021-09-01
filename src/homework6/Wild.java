@@ -4,8 +4,8 @@ public class Wild extends Animal {
 
     private boolean isPredator;
 
-    public Wild(int id, int age, int weight, String color, boolean isPredator) {
-        super(id, age, weight, color);
+    public Wild(int age, int weight, String color, boolean isPredator) {
+        super(age, weight, color);
         this.isPredator = isPredator;
     }
 
@@ -21,9 +21,13 @@ public class Wild extends Animal {
     public void voice() {
         if (isPredator()) {
             System.out.print("I am a wild animal and I am angry! ");
-        } else{
+        } else {
             System.out.print("I am a wild animal and I am friendly! ");
         }
+    }
 
+    @Override
+    public void info() {
+        super.info();
     }
 }

@@ -1,18 +1,23 @@
 package homework6;
 
-public class Crocodile extends Wild{
-    public Crocodile(int id, int age, int weight, String color, boolean isPredator) {
-        super(id, age, weight, color, isPredator);
+public class Crocodile extends Wild {
+    public Crocodile(int age, int weight, String color, boolean isPredator) {
+        super(age, weight, color, isPredator);
     }
+
     @Override
     public void voice() {
-        if(isPredator()){
+        if (isPredator()) {
             super.voice();
             System.out.print(" I live in the river!");
-        }else if(!isPredator()){
+        } else if (!isPredator()) {
             super.voice();
             System.out.print("I am not hungry yet!");
         }
+    }
 
+    @Override
+    public void info() {
+        super.info();
     }
 }

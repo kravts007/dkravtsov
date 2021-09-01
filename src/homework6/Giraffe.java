@@ -1,10 +1,9 @@
 package homework6;
 
 public class Giraffe extends Wild {
-    public Giraffe(int id, int age, int weight, String color, boolean isPredator) {
-        super(id, age, weight, color, isPredator);
+    public Giraffe(int age, int weight, String color, boolean isPredator) {
+        super(age, weight, color, isPredator);
     }
-
 
     @Override
     public void voice() {
@@ -14,6 +13,11 @@ public class Giraffe extends Wild {
         } else {
             System.out.print("I am not hungry yet!");
         }
+    }
+
+    @Override
+    public void info() {
+        super.info();
     }
 }
 

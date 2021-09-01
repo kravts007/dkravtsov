@@ -4,8 +4,8 @@ public class GuideDog extends Dog {
 
     private boolean isTrained;
 
-    public GuideDog(int id, int age, int weight, String color, String name, boolean isTrained) {
-        super(id, age, weight, color, name);
+    public GuideDog(int age, int weight, String color, String name, boolean isTrained) {
+        super(age, weight, color, name);
         this.isTrained = isTrained;
     }
 
@@ -22,9 +22,13 @@ public class GuideDog extends Dog {
         if (isTrained) {
             super.voice();
             System.out.print(" I can take you home!");
-        } else{
+        } else {
             super.voice();
         }
+    }
 
+    @Override
+    public void info() {
+        super.info();
     }
 }

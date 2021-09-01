@@ -1,13 +1,19 @@
 package homework6;
 
 public class Cat extends Domestic {
-    public Cat(int id, int age, int weight, String color, String name) {
-        super(id, age, weight, color, name);
+    public Cat(int age, int weight, String color, String name) {
+
+        super(age, weight, color, name);
     }
 
     @Override
     public void voice() {
-       super.voice();
+        super.voice();
         System.out.print(" Meow!");
+    }
+
+    @Override
+    public void info() {
+        super.info();
     }
 }

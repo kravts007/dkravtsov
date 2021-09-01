@@ -5,8 +5,8 @@ public class Domestic extends Animal {
     private String name;
     private boolean isVaccinated;
 
-    public Domestic(int id, int age, int weight, String color, String name) {
-        super(id, age, weight, color);
+    public Domestic(int age, int weight, String color, String name) {
+        super(age, weight, color);
         this.name = name;
     }
 
@@ -29,10 +29,14 @@ public class Domestic extends Animal {
     @Override
     public void voice() {
         if (isVaccinated()) {
-             super.voice();
+            super.voice();
             System.out.print("my name is" + getName() + "! and I am vaccinated");
         }
         super.voice();
-        System.out.print("my name is " + getName() +"!");
+        System.out.print("my name is " + getName() + "!");
+    }
+    @Override
+    public void info() {
+        super.info();
     }
 }
