@@ -8,6 +8,7 @@ public class Animal {
     private String color;
 
 
+
     public Animal(int id, int age, int weight, String color) {
         this.id = id;
         this.age = age;
