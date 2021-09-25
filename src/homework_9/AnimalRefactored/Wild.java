@@ -1,8 +1,8 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
-import homework6.AnimalInterface.MakeVoice;
+import homework_9.AnimalRefactored.AnimalInterfaces.MakeVoice;
 
-public class Wild extends Animal implements MakeVoice {
+public abstract class Wild extends Animal implements MakeVoice {
 
     private boolean isPredator;
 

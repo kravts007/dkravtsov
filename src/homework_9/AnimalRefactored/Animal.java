@@ -1,4 +1,4 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
 public abstract class Animal {
     private int id;
@@ -42,13 +42,13 @@ public abstract class Animal {
     public void setColor(String color) {
         this.color = color;
     }
+
     private void setId() {
         this.id = count++;
     }
 
     public void info() {
         System.out.printf("My ID is %s, my age is %s, my weight is %s kg and my color is %s", getId(), getAge(), getWeight(), getColor());
-        //System.out.print("My ID is " + getId() + ", my age is " + getAge() + ", my weight is " + getWeight() + " kg " + "and my color is " + getColor());
         System.out.println();
     }
 }

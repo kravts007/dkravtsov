@@ -16,4 +16,5 @@ public class Cat extends Domestic {
     public void info() {
         super.info();
     }
+
 }

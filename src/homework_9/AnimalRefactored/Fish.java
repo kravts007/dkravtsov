@@ -1,6 +1,6 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
-import homework6.AnimalInterface.Swimmable;
+import homework_9.AnimalRefactored.AnimalInterfaces.Swimmable;
 
 public class Fish extends Domestic implements Swimmable {
     public Fish(int age, int weight, String color, String name) {

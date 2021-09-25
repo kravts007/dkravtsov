@@ -1,6 +1,6 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
-import homework6.AnimalInterface.ExtraSkills;
+import homework_9.AnimalRefactored.AnimalInterfaces.ExtraSkills;
 
 public class GuideDog extends Dog implements ExtraSkills {
 
@@ -30,6 +30,6 @@ public class GuideDog extends Dog implements ExtraSkills {
 
     @Override
     public void extraSkills() {
-        System.out.println("I brought home slippers for you");
+        System.out.println(" I brought home slippers for you");
     }
 }

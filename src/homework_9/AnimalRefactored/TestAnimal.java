@@ -1,4 +1,4 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
 public class TestAnimal {
     public static void main(String[] args) {
@@ -43,7 +43,6 @@ public class TestAnimal {
         Wolf wolf = new Wolf(14, 22, "gray", true);
         wolf.info();
         wolf.voice();
-        System.out.println();
 
         Lion lion = new Lion(6, 230, "yellow", true);
         lion.info();

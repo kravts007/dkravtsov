@@ -1,6 +1,6 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
-import homework6.AnimalInterface.Howling;
+import homework_9.AnimalRefactored.AnimalInterfaces.Howling;
 
 public class Wolf extends Wild implements Howling {
     public Wolf(int age, int weight, String color, boolean isPredator) {
@@ -11,7 +11,7 @@ public class Wolf extends Wild implements Howling {
     public void voice() {
         if (isPredator()) {
             super.voice();
-            howl();
+            System.out.println(howl());
         } else if (!isPredator()) {
 
             System.out.println("I am not hungry yet!" + howl());

@@ -1,8 +1,8 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
-import homework6.AnimalInterface.MakeVoice;
+import homework_9.AnimalRefactored.AnimalInterfaces.MakeVoice;
 
-public class Domestic extends Animal implements MakeVoice {
+public abstract class Domestic extends Animal implements MakeVoice {
 
     private String name;
     private boolean isVaccinated;

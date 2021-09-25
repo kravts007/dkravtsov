@@ -1,6 +1,6 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
-import homework6.AnimalInterface.Howling;
+import homework_9.AnimalRefactored.AnimalInterfaces.Howling;
 
 public class Dog extends Domestic implements Howling {
     public Dog(int age, int weight, String color, String name) {
@@ -21,6 +21,6 @@ public class Dog extends Domestic implements Howling {
 
     @Override
     public String howl() {
-        return "Houuuuu!!!!";
+        return "Houuuuu!!!! I am a dog, not a wolf!";
     }
 }

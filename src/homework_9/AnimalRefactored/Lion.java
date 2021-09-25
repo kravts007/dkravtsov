@@ -1,4 +1,4 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
 public class Lion extends Wild {
     public Lion(int age, int weight, String color, boolean isPredator) {

@@ -1,4 +1,4 @@
-package homework6;
+package homework_9.AnimalRefactored;
 
 public class Hamster extends Domestic {
     public Hamster(int age, int weight, String color, String name) {
