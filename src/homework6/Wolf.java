@@ -18,6 +18,7 @@ public class Wolf extends Wild implements Howling {
         }
     }
 
+
     @Override
     public void info() {
         super.info();

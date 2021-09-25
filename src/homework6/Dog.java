@@ -13,7 +13,6 @@ public class Dog extends Domestic implements Howling {
         super.voice();
         System.out.print(" Woof!" + howl());
     }
-
     @Override
     public void info() {
         super.info();

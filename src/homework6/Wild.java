@@ -11,6 +11,7 @@ public class Wild extends Animal implements MakeVoice {
         this.isPredator = isPredator;
     }
 
+
     public boolean isPredator() {
         return isPredator;
     }

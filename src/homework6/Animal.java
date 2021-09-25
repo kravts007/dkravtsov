@@ -7,6 +7,7 @@ public abstract class Animal {
     private String color;
     protected static int count;
 
+
     public Animal(int age, int weight, String color) {
         setId();
         this.age = age;

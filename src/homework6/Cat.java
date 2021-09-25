@@ -11,7 +11,6 @@ public class Cat extends Domestic {
         super.voice();
         System.out.print(" Meow!");
     }
-
     @Override
     public void info() {
         super.info();

@@ -14,6 +14,7 @@ public class Lion extends Wild {
             System.out.println("I am not hungry yet!");
         }
     }
+
     @Override
     public void info() {
         super.info();
