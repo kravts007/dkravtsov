@@ -17,7 +17,6 @@ public class Wolf extends Wild implements Howling {
             System.out.println("I am not hungry yet!" + howl());
         }
     }
-
     @Override
     public void info() {
         super.info();

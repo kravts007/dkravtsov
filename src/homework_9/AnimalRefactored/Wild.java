@@ -18,7 +18,6 @@ public abstract class Wild extends Animal implements MakeVoice {
     public void setPredator(boolean predator) {
         isPredator = predator;
     }
-
     @Override
     public void voice() {
         if (isPredator()) {

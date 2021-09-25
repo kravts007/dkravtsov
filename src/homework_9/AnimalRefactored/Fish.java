@@ -16,7 +16,6 @@ public class Fish extends Domestic implements Swimmable {
     public void info() {
         super.info();
     }
-
     @Override
     public String swim() {
         return " ......";

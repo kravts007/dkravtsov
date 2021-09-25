@@ -5,7 +5,6 @@ public class Cat extends Domestic {
 
         super(age, weight, color, name);
     }
-
     @Override
     public void voice() {
         super.voice();

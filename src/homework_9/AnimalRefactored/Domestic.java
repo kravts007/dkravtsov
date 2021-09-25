@@ -11,7 +11,6 @@ public abstract class Domestic extends Animal implements MakeVoice {
         super(age, weight, color);
         this.name = name;
     }
-
     public String getName() {
         return name;
     }

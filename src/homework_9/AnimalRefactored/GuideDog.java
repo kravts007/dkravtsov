@@ -10,7 +10,6 @@ public class GuideDog extends Dog implements ExtraSkills {
         super(age, weight, color, name);
         this.isTrained = isTrained;
     }
-
     @Override
     public void voice() {
         if (isTrained) {

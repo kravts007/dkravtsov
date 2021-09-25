@@ -13,6 +13,7 @@ public class Giraffe extends Wild {
         } else {
             System.out.print("I am not hungry yet!");
         }
+
     }
     @Override
     public void info() {
