@@ -31,5 +31,6 @@ public class TestCarV9 {
         car.drive(150, "Киев");
 
         car.printTripReport();
+
     }
 }

@@ -42,7 +42,6 @@ public class CarV9 {
                 tripDistance,
                 tripMoneySpent);
     }
-
     public void setTripDistance(double tripDistance) {
         this.tripDistance = tripDistance;
     }
