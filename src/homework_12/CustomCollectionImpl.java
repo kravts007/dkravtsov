@@ -141,7 +141,6 @@ public class CustomCollectionImpl implements CustomCollection {
                     return true;
                 }
             }
-
         }
         return false;
     }
