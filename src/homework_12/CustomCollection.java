@@ -21,5 +21,5 @@ public interface CustomCollection {
 
     int size();
 
-    boolean equals(Collection coll);
+    boolean equals(CustomCollection coll);
 }

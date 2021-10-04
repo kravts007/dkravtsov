@@ -1,7 +1,5 @@
 package homework_12;
 
-import java.util.Collection;
-
 public class CustomCollectionImpl implements CustomCollection {
     private Node head;
     private int size = 0;
@@ -131,24 +129,28 @@ public class CustomCollectionImpl implements CustomCollection {
     }
 
     @Override
-    public boolean equals(Collection coll) {
+    public boolean equals(CustomCollection coll) {
+        if (this == coll) {
+            return true;
+        }
         if (this.size != coll.size()) {
             return false;
         }
-        if (this == coll && this.size == coll.size()) {
-            for (int i = 0; i < this.size(); i++) {
-                if (this.get(i).equals(coll.get(i))) {
-                    return true;
-                }
+        for (int i = 0; i < this.size; i++) {
+            String eOfFirstCol = this.get(i);
+            String eOfSecondCol = coll.get(i);
+            if ((eOfFirstCol != null && !eOfFirstCol.equals(eOfSecondCol)) || (eOfFirstCol == null && eOfSecondCol != null)) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
-        @Override
-        public String toString () {
-            return "CustomCollectionImpl{" +
-                    "head=" + head +
-                    '}';
-        }
+    @Override
+    public String toString() {
+        return "CustomCollectionImpl{" +
+                "head=" + head +
+                ", size=" + size +
+                '}';
     }
+}
