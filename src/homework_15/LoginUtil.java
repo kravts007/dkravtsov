@@ -31,7 +31,7 @@ public class LoginUtil {
     private static void isLoginValid(String login) throws WrongLoginException {
         if (!(login.length() > 0 && login.length() < 20)
                 || !login.matches("^[a-zA-Z0-9|_]+$")
-                || loginData.containsKey(login)) {
+                || !loginData.containsKey(login)) {
             throw new WrongLoginException("Login is incorrect");
         }
     }
