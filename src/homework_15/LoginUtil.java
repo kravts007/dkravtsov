@@ -17,9 +17,8 @@ public class LoginUtil {
 
     static boolean isUserAuthentic(String login, String password, String confirmPassword) {
         try {
-            assert password != null;
-            if (!password.equals(confirmPassword)) throw new WrongPasswordException();
-            assert login != null;
+            if (password == null || !password.equals(confirmPassword)) throw new WrongPasswordException();
+            if (login == null) throw new WrongLoginException();
             isLoginValid(login);
             isPasswordValid(password);
         } catch (WrongLoginException | WrongPasswordException exception) {
@@ -37,7 +36,7 @@ public class LoginUtil {
     }
 
     private static void isPasswordValid(String password) throws WrongPasswordException {
-        if (!(password.length() < 20) || (!password.matches("^[a-zA-Z0-9|_]+$"))
+        if (!(password.length() > 0 && password.length() < 20) || (!password.matches("^[a-zA-Z0-9|_]+$"))
         ) {
             throw new WrongPasswordException("Password is incorrect");
         }
